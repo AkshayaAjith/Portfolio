@@ -1,0 +1,46 @@
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  height:100vh;
+  display: grid;
+  align-items: center;
+  background:#f5f5f5;
+  font-family: 'poppins',sans-serif;
+}
+.App{
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+.App button{
+  padding-top: 25px;
+  position: relative;
+  transition: 0.7s;
+}
+.App data{
+  display: inline-table;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  padding: 10px;
+  transition: .5s;
+}
+.App data::before, .App data::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 1px solid #ccc;
+  width: 51%;
+  height: 10px;
+}
+.App data::after{
+  right: auto;
+  left: 50%;
+  border-left: 1px solid #ccc;
+}
+
